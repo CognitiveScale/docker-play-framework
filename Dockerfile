@@ -10,5 +10,4 @@ RUN VERSION=2.2.4 \
   && ln -s /opt/play-${VERSION} /opt/play \
   && update-alternatives --install "/usr/bin/play" "play" "/opt/play/play" 100 \
   && ln -s /activator-${VERSION}-minimal/activator /usr/local/bin/activator \
-  && mkdir -p /data /logs \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
